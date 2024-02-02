@@ -1,5 +1,10 @@
 # Adding Custom Cells to the AI config library
 
+The custom cell that was developed:
+The cell has a mock API as a model, and has settings similar to google-search API
+
+![alt text](image.png)
+
 ## Steps to run:
 
 1. Clone the git repository
