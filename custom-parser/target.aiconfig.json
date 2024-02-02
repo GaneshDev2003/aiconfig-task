@@ -1,0 +1,77 @@
+{
+  "name": "",
+  "schema_version": "latest",
+  "metadata": {
+    "parameters": {},
+    "models": {
+      "Custom": {
+        "model": "Custom",
+        "temperature": 10,
+        "stream": true
+      }
+    },
+    "default_model": "Custom",
+    "model_parsers": {
+      "Custom": "Custom"
+    }
+  },
+  "description": "",
+  "prompts": [
+    {
+      "name": "prompt_1",
+      "input": "test prompt",
+      "metadata": {
+        "model": {
+          "name": "Custom",
+          "settings": {
+            "frequency_penalty": -2,
+            "number_of_results": 21.3
+          }
+        },
+        "parameters": {}
+      }
+    },
+    {
+      "name": "prompt_3",
+      "input": "",
+      "metadata": {
+        "model": {
+          "name": "Custom",
+          "settings": {}
+        },
+        "parameters": {}
+      },
+      "outputs": []
+    },
+    {
+      "name": "prompt_2",
+      "input": "What is a prompt in openai",
+      "metadata": {
+        "model": {
+          "name": "gpt-3.5-turbo",
+          "settings": {}
+        },
+        "parameters": {}
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "execution_count": 0,
+          "data": "A prompt in OpenAI models, such as GPT-3, is a piece of text that serves as an input to generate a textual response or continuation. It can be a question, a statement, or an incomplete sentence that provides context or guidance for the model to produce appropriate outputs. The prompt helps set the initial context and influences the direction of the generated text. The quality and specificity of the prompt often have a significant impact on the generated response.",
+          "metadata": {
+            "id": "chatcmpl-8mSboTNQmfedQpkTpYWZHequylc2r",
+            "created": 1706560408,
+            "model": "gpt-3.5-turbo-0613",
+            "object": "chat.completion.chunk",
+            "raw_response": {
+              "content": "A prompt in OpenAI models, such as GPT-3, is a piece of text that serves as an input to generate a textual response or continuation. It can be a question, a statement, or an incomplete sentence that provides context or guidance for the model to produce appropriate outputs. The prompt helps set the initial context and influences the direction of the generated text. The quality and specificity of the prompt often have a significant impact on the generated response.",
+              "role": "assistant"
+            },
+            "role": "assistant"
+          }
+        }
+      ]
+    }
+  ],
+  "$schema": "https://json.schemastore.org/aiconfig-1.0"
+}

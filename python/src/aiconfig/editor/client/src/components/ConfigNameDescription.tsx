@@ -101,7 +101,7 @@ export default memo(function ConfigNameDescription({
         <>
           <TextInput
             classNames={{ input: classes.nameInput }}
-            placeholder={"Config name"}
+            placeholder={"Enter Config name"}
             value={name}
             onKeyDown={onHandleEnter}
             autoFocus={initialFocus === "name"}

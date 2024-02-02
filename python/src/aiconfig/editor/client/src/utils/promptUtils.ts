@@ -19,6 +19,7 @@ import { HuggingFaceTextSummarizationRemoteInferencePromptSchema } from "../shar
 import { HuggingFaceTextTranslationRemoteInferencePromptSchema } from "../shared/prompt_schemas/HuggingFaceTextTranslationRemoteInferencePromptSchema";
 import { HuggingFaceImage2TextRemoteInferencePromptSchema } from "../shared/prompt_schemas/HuggingFaceImage2TextRemoteInferencePromptSchema";
 import { ClaudeBedrockPromptSchema } from "../shared/prompt_schemas/ClaudeBedrockPromptSchema";
+import { GoogleSearchPromptSchema } from "../shared/prompt_schemas/GoogleSearchPromptSchema";
 
 /**
  * Get the name of the model for the specified prompt. The name will either be specified in the prompt's
@@ -63,7 +64,6 @@ export function getPromptModelName(
 // Should we define a JSON schema for PromptSchema type so we can safely serialize/deserialize them?
 export const PROMPT_SCHEMAS: Record<string, PromptSchema> = {
   // OpenAIChatModelParser
-  "gpt-4": OpenAIChatModelParserPromptSchema,
   "gpt-4-0314": OpenAIChatModelParserPromptSchema,
   "gpt-4-0613": OpenAIChatModelParserPromptSchema,
   "gpt-4-32k": OpenAIChatModelParserPromptSchema,
@@ -74,7 +74,7 @@ export const PROMPT_SCHEMAS: Record<string, PromptSchema> = {
   "gpt-3.5-turbo-0301": OpenAIChatModelParserPromptSchema,
   "gpt-3.5-turbo-0613": OpenAIChatModelParserPromptSchema,
   "gpt-3.5-turbo-16k-0613": OpenAIChatModelParserPromptSchema,
-
+  Custom: GoogleSearchPromptSchema,
   // TODO: Add GPT4-V parser in AIConfig
   "gpt-4-vision-preview": OpenAIChatVisionModelParserPromptSchema,
 
@@ -82,7 +82,7 @@ export const PROMPT_SCHEMAS: Record<string, PromptSchema> = {
   "dall-e-2": DalleImageGenerationParserPromptSchema,
   "dall-e-3": DalleImageGenerationParserPromptSchema,
 
-  "ClaudeBedrockModelParser": ClaudeBedrockPromptSchema,
+  ClaudeBedrockModelParser: ClaudeBedrockPromptSchema,
 
   HuggingFaceImage2TextRemoteInference:
     HuggingFaceImage2TextRemoteInferencePromptSchema,

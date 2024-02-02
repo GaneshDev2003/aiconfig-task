@@ -20,8 +20,8 @@ dynamic = ["dependencies"]
 dependencies = {file = ["requirements.txt"]}
 
 [project.urls]
-"Homepage" = "https://github.com/lastmile-ai/aiconfig"
-"Bug Tracker" = "https://github.com/lastmile-ai/aiconfig/issues"
+"Homepage" = "https://github.com/GaneshDev2003/aiconfig"
+"Bug Tracker" = "https://github.com/GaneshDev2003/aiconfig/issues"
 
 [project.scripts]
 aiconfig = "aiconfig.scripts.aiconfig_cli:main"
